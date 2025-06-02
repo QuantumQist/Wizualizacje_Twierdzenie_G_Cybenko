@@ -1,0 +1,166 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5867,        158]
+NotebookOptionsPosition[      5174,        137]
+NotebookOutlinePosition[      5568,        153]
+CellTagsIndexPosition[      5525,        150]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Wizualizacja - \:015bcie\:015bnianie funkcji", "Title",
+ CellChangeTimes->{{3.955360678611742*^9, 
+  3.9553606953864393`*^9}},ExpressionUUID->"9487dc40-6ed0-454c-9d3a-\
+16594527a9e4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Piecewise", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Sin", "[", 
+           RowBox[{
+            RowBox[{"a", "*", "x"}], "+", "b"}], "]"}], ",", 
+          RowBox[{
+           RowBox[{"Abs", "[", 
+            RowBox[{
+             RowBox[{"a", "*", "x"}], "+", "b"}], "]"}], "<", "Pi"}]}], "}"}],
+         ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"a", "*", "x"}], "+", "b"}], "<", "Pi"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"a", "*", "x"}], "+", "b"}], ">", "Pi"}]}], "}"}]}], 
+       "}"}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "4"}], ",", " ", "8"}], "}"}], ",", " ", 
+     RowBox[{"PlotRange", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1.2"}], ",", " ", "1.2"}], "}"}]}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "1"}], "}"}], ",", " ", 
+     RowBox[{"-", "8"}], ",", " ", "8"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b", ",", "0"}], "}"}], ",", " ", 
+     RowBox[{"-", "5"}], ",", " ", "5"}], "}"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.9553608641636143`*^9, 3.95536087954233*^9}, {
+  3.955361077331953*^9, 3.955361155655076*^9}, {3.955361423491178*^9, 
+  3.9553615482175417`*^9}, {3.955361602424693*^9, 3.9553616434960747`*^9}},
+ CellLabel->"In[51]:=",ExpressionUUID->"4eb2d396-bc41-42a2-812e-ed543c0c05bc"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 
+    6.26, $CellContext`b$$ = -3.1399999999999997`, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 1}, -8, 8}, {{
+       Hold[$CellContext`b$$], 0}, -5, 5}}, Typeset`size$$ = {
+    699., {214., 218.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1, $CellContext`b$$ = 0}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        Piecewise[{{
+           Sin[$CellContext`a$$ $CellContext`x + $CellContext`b$$], 
+           Abs[$CellContext`a$$ $CellContext`x + $CellContext`b$$] < Pi}, {
+          0, $CellContext`a$$ $CellContext`x + $CellContext`b$$ < Pi}, {
+          0, $CellContext`a$$ $CellContext`x + $CellContext`b$$ > 
+           Pi}}], {$CellContext`x, -4, 8}, PlotRange -> {-1.2, 1.2}], 
+      "Specifications" :> {{{$CellContext`a$$, 1}, -8, 
+         8}, {{$CellContext`b$$, 0}, -5, 5}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{743., {300., 305.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.9553615104953136`*^9, 3.955361549519349*^9}, {
+   3.9553616065407877`*^9, 3.9553616439424343`*^9}, 3.9555354166007433`*^9, {
+   3.955625631391267*^9, 3.95562563199263*^9}},
+ CellLabel->"Out[51]=",ExpressionUUID->"c2fc7740-f50a-4b18-8d39-4782520b5b36"]
+}, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{{3.95536073970089*^9, 3.9553607440789833`*^9}, {
+   3.955360817198512*^9, 3.955360839532391*^9}, {3.955360885137155*^9, 
+   3.955360927740391*^9}, 
+   3.9553610172277737`*^9},ExpressionUUID->"afd9221f-7a3b-4d9d-a58f-\
+0f61a992ecde"]
+}, Open  ]]
+},
+WindowSize->{870, 855},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"920ee851-01fe-4e4c-852e-84b127fb0bed"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 189, 3, 98, "Title",ExpressionUUID->"9487dc40-6ed0-454c-9d3a-16594527a9e4"],
+Cell[CellGroupData[{
+Cell[794, 29, 1817, 51, 136, "Input",ExpressionUUID->"4eb2d396-bc41-42a2-812e-ed543c0c05bc"],
+Cell[2614, 82, 2232, 44, 624, "Output",ExpressionUUID->"c2fc7740-f50a-4b18-8d39-4782520b5b36"]
+}, Open  ]],
+Cell[4861, 129, 297, 5, 52, "Input",ExpressionUUID->"afd9221f-7a3b-4d9d-a58f-0f61a992ecde"]
+}, Open  ]]
+}
+]
+*)
+
